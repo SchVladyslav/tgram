@@ -1,0 +1,53 @@
+.User {
+    display: flex;
+    align-items: center;
+
+    padding: 10px;
+    margin-top: 10px;
+
+    transition: ease .3s;
+}
+
+.User:hover {
+    border-radius: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.User__img {
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: rgb(71, 119, 252);
+}
+
+.User__details {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.User__title,
+.User__action {
+    display: flex;
+    flex-direction: column;
+}
+
+.User__action {
+    align-items: center;
+}
+
+.User__name {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.User__message {
+    font-size: 15px;
+    color: rgb(138, 136, 136);
+    font-weight: normal;
+}
+
+.User__time,
+.User__unread {
+    font-size: 13px;
+}

@@ -1,0 +1,30 @@
+.Chat {
+  /* grow (take up available space, shrink */
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 85%;
+  margin: 0 auto;
+}
+
+.Message {
+  margin: 1rem 0;
+  padding: 10px;
+  max-width: 90%;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.Message.isUserMsg {
+  margin-left: auto;
+  background-color: #4fae4f;
+}
+
+@media (min-width: 576px) {
+  .Message {
+    max-width: 60%;
+  }
+}

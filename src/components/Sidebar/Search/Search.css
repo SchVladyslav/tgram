@@ -1,0 +1,26 @@
+.search__input {
+    height: 20px;
+    width: 240px;
+    width: 100%;
+
+    font-size: 14px;
+
+    color: #000;
+    background-color: rgb(233, 233, 233);
+    border-radius: 25px;
+
+    background-image: url('../../../assets/img/search_svg.svg');
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+
+    padding: 8px 0;
+    padding-left: 30px;
+    padding-right: 10px;
+
+    transition: ease 0.2s;
+    cursor: pointer;
+}
+
+.search__input:focus {
+    box-shadow: 0 0 0 2px #4EA4F6;
+}

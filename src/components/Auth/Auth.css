@@ -1,0 +1,144 @@
+.auth {
+  height: 100vh;
+  max-width: 360px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.auth-caption {
+  margin-bottom: 40px;
+}
+
+.auth__img {
+  width: 160px;
+  height: 160px;
+}
+
+.auth-content {
+  width: 254px;
+  text-align: center;
+}
+
+.auth__title {
+  font-size: 28px;
+  font-weight: 500;
+
+  margin-bottom: 15px;
+}
+
+.auth-content p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth__fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: ease .2s;
+}
+
+.auth__fieldset legend {
+  font-size: 13px;
+  color: #777;
+}
+
+.auth__input {
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.auth__fieldset:hover {
+  border: 1px solid #4ea4fe;
+}
+
+.auth__label-checkbox {
+  margin-left: 20px;
+}
+
+.auth__btn {
+  width: 100%;
+  color: #fff;
+  padding: 15px 16px;
+  border-radius: 10px;
+  background-color: #4ea4fe;
+  margin-top: 20px;
+
+  font-size: 18px;
+  transition: ease .2s;
+}
+
+.auth__btn:hover {
+    opacity: 0.8;
+}
+
+/* Checkbox */
+
+.auth__label-container {
+  display: block;
+  position: relative;
+  padding-left: 55px;
+  cursor: pointer;
+}
+
+.auth__label-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.auth__label-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.auth__label-container input:checked ~ .checkmark {
+  background-color: #4ea4fe;
+  border-color: #4ea4fe;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.auth__label-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.auth__label-container .checkmark:after {
+  left: 5px;
+  top: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}

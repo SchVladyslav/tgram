@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+   
+    background-color: #fff;
+    transition: ease .3s;
+}
+
+.header__img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.header__action {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin-right: 20px;
+}
+
+.header__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+.header__action img {
+    height: 24px;
+    width: 24px;
+
+    padding: 5px;
+    transition: linear .2s;
+}
+
+.header__action img:hover {
+    background-color: #707567;
+    border-radius: 50%;
+}
+
+.header__name {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.header__message {
+    font-size: 15px;
+    color: rgb(138, 136, 136);
+    font-weight: normal;
+}
+
+.header__time,
+.header__unread {
+    font-size: 13px;
+}
